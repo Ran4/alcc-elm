@@ -333,31 +333,6 @@ inputs =
         )
 
 
-
--- )
--- ++ (getQueryInput "Max APK:" "9.5" UpdateMaxApk)
--- ++ htmlBr
--- ++ (getQueryInput "Min vol:" "50" UpdateMinVolumeInMl)
--- ++ (getQueryInput "Max vol:" "75" UpdateMaxVolumeInMl)
--- ++ htmlBr
--- ++ (getQueryInput "" "" UpdateMinAlcoholContent)
--- ++ (getQueryInput "" "" UpdateMaxAlcoholContent)
--- ++ htmlBr
--- ++ (getQueryInput "" "" UpdateMinPrice)
--- ++ (getQueryInput "" "" UpdateMaxPrice)
--- minApk = Nothing
--- maxApk = Nothing
--- minVolumeInMl = Nothing
--- maxVolumeInMl = Nothing
--- minAlcoholContent = Nothing
--- maxAlcoholContent = Nothing
--- minPrice = Nothing
--- maxPrice = Nothing
--- , Html.input [ placeholder "0.0", Html.Events.onInput UpdateSearchString ] []
--- , Html.button [ Html.Events.onClick PerformLookup ] [ Html.text "Button text" ]
--- ]
-
-
 statusView : Model -> Html Msg
 statusView model =
     Html.div [ Html.Attributes.style [ ( "color", "red" ) ] ]
